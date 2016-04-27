@@ -1,0 +1,29 @@
+{
+  "name": "park-easy",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Sébastien Maloron",
+      "email": "contact@smaloron.eu"
+    }
+  ],
+
+  "require": {
+    "slim/logger": "0.1.*",
+    "slim/middleware": "~1.0",
+    "akrabat/rka-slim-controller": "^2.0",
+    "tuupola/slim-jwt-auth": "1.*"
+  },
+
+  "autoload": {
+    "psr-0": {
+      "": "src/classes/",
+      "\\ParkEasy" : "src/classes/ParkEasy/",
+      "\\ParkEasy\\Models" : "src/classes/ParkEasy/Models/",
+      "\\ParkEasy\\Models\\DAO" : "src/classes/ParkEasy/Models/DAO/",
+      "\\ParkEasy\\Controllers\\" : "src/classes/ParkEasy/Controllers"
+    }
+  }
+}
